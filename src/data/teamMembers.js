@@ -3,10 +3,10 @@ export const members = [
     slug: 'haytham',
     name: 'Haytham',
     role: ' General Manager',
-    email: 'haytham@example.com',
+    email: ' haytham@signaturejewels.ae',
     phone: ' +971504023372',
     whatsapp: ' +971504023372',
-    address: 'Al Hakam ibn Amr, Al Nahyan E25, Abu Dhabi',
+    address: 'Al Hakam ibn Amr, Al Nahyan, E25, Abu Dhabi',
     photo: null
   },
   {
@@ -16,7 +16,7 @@ export const members = [
     email: 'ola@signaturejewels.ae',
     phone: '+9710564023098',
     whatsapp: '+9710564023098',
-    address: 'Al Hakam ibn Amr, Al Nahyan E25, Abu Dhabi',
+    address: 'Al Hakam ibn Amr, Al Nahyan, E25, Abu Dhabi',
     photo: null
   },
   {
@@ -26,7 +26,7 @@ export const members = [
     email: 'sabah@signaturejewels.ae',
     phone: '+971050149499',
     whatsapp: '+971050149499',
-    address: 'Al Hakam ibn Amr, Al Nahyan E25, Abu Dhabi',
+    address: 'Al Hakam ibn Amr, Al Nahyan, E25, Abu Dhabi',
     photo: null
   }
 ];

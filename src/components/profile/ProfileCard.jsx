@@ -15,7 +15,7 @@ function ProfileCard({ name, path, role, photo }) {
             }}
             whileTap={{ scale: 0.98 }}
         >
-            <Link to={`/${path}`} className="block rounded-xl hover:border-gray-300 hover:shadow-md transition group bg-[#211f5d] backdrop-blur-sm overflow-hidden"> 
+            <Link to={`/${path}`} className="block rounded-3xl hover:border-gray-300 shadow-2xl hover:shadow-xl transition group bg-[#111030a8] backdrop-blur-sm overflow-hidden"> 
                 <div className="flex items-center gap-4">
                     <motion.div
                         initial={{ scale: 0.8 }}
@@ -25,7 +25,7 @@ function ProfileCard({ name, path, role, photo }) {
                         {photo ? (
                             <img src={photo} alt={name} className="h-40 w-32 object-cover grayscale-100" />
                         ) : (
-                            <div className="h-32 w-32 rounded-l-xl bg-white text-indigo-600 flex items-center justify-center font-semibold">
+                            <div className="h-32 w-32 rounded-l-xl bg-neutral-300 text-indigo-600 flex items-center justify-center font-semibold">
                                 {getInitials(name)}
                             </div>
                         )}

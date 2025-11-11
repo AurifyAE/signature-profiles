@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import profileBanner from '../../assets/profile/profileBanner.svg';
 import siteLogo from '../../assets/homepage/logo.svg';
 import logoWhite from '../../assets/homepage/logo-white.svg';
-import logoBlue from '../../assets/homepage/logo-blue.png';
 import pattern from '../../assets/homepage/pattern1.svg';
 import phoneIcon from '../../assets/profile/phone.svg';
 import mailIcon from '../../assets/profile/mail.svg';
@@ -52,23 +51,25 @@ function MemberDetail({ name, role, email, phone, whatsapp, address, photo }) {
         document.body.removeChild(link);
     };
 
-    // Split address into two lines: before and after the first comma. If no comma, just show full address as first line.
+    // Split address into two lines: before and after the second comma. If less than two commas, just show full address as first line.
     let addressLine1 = '';
     let addressLine2 = '';
     if (typeof address === 'string') {
-        const idx = address.indexOf(',');
-        if (idx !== -1) {
-            addressLine1 = address.substring(0, idx).trim();
-            addressLine2 = address.substring(idx + 1).trim();
+        const firstComma = address.indexOf(',');
+        const secondComma = address.indexOf(',', firstComma + 1);
+        if (firstComma !== -1 && secondComma !== -1) {
+            addressLine1 = address.substring(0, secondComma).trim();
+            addressLine2 = address.substring(secondComma + 1).trim();
         } else {
             addressLine1 = address;
             addressLine2 = '';
         }
     }
 
+
     return (
         <motion.div
-            className="min-h-screen flex items-center justify-center bg-white/90"
+            className="min-h-screen flex items-center justify-center bg-white/40"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -149,7 +150,7 @@ function MemberDetail({ name, role, email, phone, whatsapp, address, photo }) {
 
                     {/* Right side - Centered name/role, Location and Icons */}
                     <motion.div
-                        className="flex flex-col items-center justify-center bg-[#211f5d] text-white pb-20 lg:pb-0 px-6 md:px-0"
+                        className="flex flex-col items-center justify-center bg-[#211f5d] text-white pt-10 md:pt-0 pb-20 lg:pb-0 px-6 md:px-0"
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
