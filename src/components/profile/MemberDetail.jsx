@@ -25,7 +25,7 @@ function MemberDetail({ name, role, email, phone, whatsapp, address, photo }) {
             'BEGIN:VCARD',
             'VERSION:3.0',
             `FN:${escape(name)}`,
-            'ORG:Mac & Ro Capital',
+            'ORG:Signature Jewellery',
             `TITLE:${escape(role)}`,
             phone ? `TEL;TYPE=WORK,VOICE:${escape(phone)}` : '',
             whatsapp ? `TEL;TYPE=CELL,VOICE:${escape(whatsapp)}` : '',
@@ -140,7 +140,7 @@ function MemberDetail({ name, role, email, phone, whatsapp, address, photo }) {
 
                         {/* Gradient overlay for text readability */}
                         <motion.div
-                            className="absolute inset-0 bg-gradient-to-b from-transparent to-[#211f5da8]"
+                            className="absolute inset-0 bg-gradient-to-b from-transparent to-[#211f5d]"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
