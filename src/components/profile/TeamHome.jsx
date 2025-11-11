@@ -9,7 +9,7 @@ import ProfileCard from './ProfileCard';
 
 function TeamHome() {
     return (
-        <div className='bg-[#211f5d] h-auto'>
+        <div className='bg-[#211f5d] h-auto overflow-hidden'>
             <div className="w-full">
                 <div className="mx-auto max-w-5xl px-6 py-6">
                     <div className="relative bg-white rounded-[50px] border border-gray-200">
