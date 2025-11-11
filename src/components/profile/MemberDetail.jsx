@@ -5,7 +5,7 @@ import profileBanner from '../../assets/profile/profileBanner.svg';
 import siteLogo from '../../assets/homepage/logo.svg';
 import logoWhite from '../../assets/homepage/logo-white.svg';
 import logoBlue from '../../assets/homepage/logo-blue.png';
-import pattern from '../../assets/homepage/pattern.svg';
+import pattern from '../../assets/homepage/pattern1.svg';
 import phoneIcon from '../../assets/profile/phone.svg';
 import mailIcon from '../../assets/profile/mail.svg';
 import whatsappIcon from '../../assets/profile/whatsapp.svg';
