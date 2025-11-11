@@ -14,8 +14,8 @@ export const members = [
     name: 'Ola Abu Shareef',
     role: 'Sales Manager',
     email: 'ola@signaturejewels.ae',
-    phone: '+9710564023098',
-    whatsapp: '+9710564023098',
+    phone: '+971564023098',
+    whatsapp: '+971564023098',
     address: 'Al Hakam ibn Amr, Al Nahyan, E25, Abu Dhabi',
     photo: null
   },
@@ -24,8 +24,8 @@ export const members = [
     name: 'Sabah Al Deeri',
     role: 'Operation Manager',
     email: 'sabah@signaturejewels.ae',
-    phone: '+971050149499',
-    whatsapp: '+971050149499',
+    phone: '+971501494999',
+    whatsapp: '+971501494999',
     address: 'Al Hakam ibn Amr, Al Nahyan, E25, Abu Dhabi',
     photo: null
   }
